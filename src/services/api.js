@@ -11,6 +11,6 @@ export const getWeather = async (city) => {
     return response.data;
   } catch (err) {
     console.error("Error while calling api ", err.message);
-    return err.response;
+    // return err.response;
   }
 };

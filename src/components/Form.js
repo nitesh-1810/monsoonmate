@@ -32,7 +32,7 @@ const Form = ({ setWeatherInfo }) => {
   const getWeatherData = async () => {
     if (data.city !== "") {
       let result = await getWeather(data.city);
-      console.log(result);
+      //console.log( result);
       setWeatherInfo(result);
     }
   };

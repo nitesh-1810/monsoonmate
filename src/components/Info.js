@@ -42,28 +42,28 @@ const Info = ({ weatherData }) => {
     >
       <Row>
         <Place />
-        Location : {weatherData.name}, {weatherData.sys.country}
+        Location : {weatherData?.name}, {weatherData?.sys?.country}
       </Row>
       <Row>
-        <Brightness7 /> Temperature : {weatherData.main.temp}
+        <Brightness7 /> Temperature : {weatherData?.main?.temp}
       </Row>
       <Row>
-        <Opacity /> Humidity : {weatherData.main.humidity}
+        <Opacity /> Humidity : {weatherData?.main?.humidity}
       </Row>
       <Row>
         <Brightness5 /> Sun Rise :{" "}
-        {new Date(weatherData.sys.sunrise * 1000).toLocaleTimeString()}
+        {new Date(weatherData?.sys?.sunrise * 1000).toLocaleTimeString()}
       </Row>
       <Row>
         <Brightness6 /> Sun Set :{" "}
-        {new Date(weatherData.sys.sunset * 1000).toLocaleTimeString()}
+        {new Date(weatherData?.sys?.sunset * 1000).toLocaleTimeString()}
       </Row>
       <Row>
-        <Dehaze /> Weather : {weatherData.weather[0].main},{" "}
-        {weatherData.weather[0].description}
+        <Dehaze /> Weather : {weatherData?.weather[0]?.main},{" "}
+        {weatherData?.weather[0]?.description}
       </Row>
       <Row>
-        <Cloud /> Cloud : {weatherData.clouds.all} %
+        <Cloud /> Cloud : {weatherData?.clouds?.all} %
       </Row>
     </Box>
   ) : (
