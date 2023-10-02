@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Box, styled } from "@mui/material";
 import Bg from "../assets/images/bg.jpg";
-import Hbg from "../assets/images/HomeBackground.jpg";
 import Form from "../components/Form";
 import Info from "../components/Info";
 
@@ -9,10 +8,9 @@ const Component = styled(Box)({
   height: "100vh",
   display: "flex",
   alignItems: "center",
-  padding: "0 250px",
+  width: "65%",
   margin: "0 auto",
-  backgroundImage: `url(${Hbg})`,
-  backgroundSize: "cover",
+  zIndex: "1",
 });
 
 const Image = styled(Box)({
